@@ -1,0 +1,47 @@
+// import React from "react";
+// import Box from "@mui/material/Box";
+// import Button from "@mui/material/Button";
+// import EditTwoToneIcon from "@mui/icons-material/EditTwoTone";
+// import styled from "@emotion/styled";
+// import { SIDEBAR_DATA } from "../config/SidbarConfig";
+// import List from "@mui/material/List";
+// import ListItem from "@mui/material/ListItem";
+
+// const SidebarContent = () => {
+//   const ComposeButton = styled(Button)({
+//     gap: "10px",
+//     background: "#C2E7FF",
+//     padding: "1vw 1.5vw",
+//     boxShadow: "none",
+//     color: "#000",
+//     borderRadius: "18px",
+//     marginLeft: "8px",
+//     textTransform: "initial",
+//     display: "flex",
+//     alignItems: "center",
+//     justifyContent: "center",
+//   });
+
+//   return (
+//     <Box>
+//       <ComposeButton variant="contained">
+//         <EditTwoToneIcon />
+//         Compose
+//       </ComposeButton>
+//       <List>
+//         {
+//           SIDEBAR_DATA.map(data=>{
+//             <ListItem>
+//               <data.icon/>
+//             </ListItem>
+//           })
+//         }
+//       </List>
+//     </Box>
+//   );
+// };
+
+// export default SidebarContent;
+
+**
+Need to Understand the matters of {props}..
