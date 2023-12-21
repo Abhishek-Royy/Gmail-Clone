@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import EditTwoToneIcon from "@mui/icons-material/EditTwoTone";
@@ -13,6 +13,7 @@ import NoteAddOutlinedIcon from "@mui/icons-material/NoteAddOutlined";
 import DeleteOutlineOutlinedIcon from "@mui/icons-material/DeleteOutlineOutlined";
 import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
 import ChatOutlinedIcon from "@mui/icons-material/ChatOutlined";
+import ComposeMail from "./ComposeMail";
 
 const SidebarContent = () => {
   const ComposeButton = styled(Button)({
@@ -88,9 +89,15 @@ const SidebarContent = () => {
     },
   ];
 
+  const [openComposeMail, setopenComposeMail] = useState(false);
+
+  const openComposeClick = () => {
+    setopenComposeMail(true);
+  };
+
   return (
     <Container>
-      <ComposeButton variant="contained">
+      <ComposeButton variant="contained" onClick={() => openComposeClick()}>
         <EditTwoToneIcon />
         Compose
       </ComposeButton>
@@ -101,6 +108,10 @@ const SidebarContent = () => {
           </ListItem>
         ))}
       </List>
+      <ComposeMail
+        openComposeMail={openComposeMail}
+        setopenComposeMail={setopenComposeMail}
+      />
     </Container>
   );
 };

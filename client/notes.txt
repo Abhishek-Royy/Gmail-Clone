@@ -45,3 +45,6 @@
 
 **
 Need to Understand the matters of {props}..
+
+**
+to transfer mail-> we used simple mail transfer protocol(SMTP)..

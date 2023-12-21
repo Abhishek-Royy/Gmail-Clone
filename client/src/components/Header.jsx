@@ -16,10 +16,8 @@ import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined
 const StyledAppbar = styled(AppBar)({
   background: "#F6F8FC",
   boxShadow: "none",
-  '& div >svg:hover':{
-    cursor:"pointer",
-    background:"#E8EAED",
-    borderRadius:"50%",
+  "& div >svg:hover": {
+    cursor: "pointer",
   },
 });
 
